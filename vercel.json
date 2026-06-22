@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/procurS",
+      "destination": "https://stally-pg2v063ft-phan-tam-s-projects.vercel.app"
+    },
+    {
+      "source": "/procurS/:path*",
+      "destination": "https://stally-pg2v063ft-phan-tam-s-projects.vercel.app/:path*"
+    },
+    {
+      "source": "/assets/:file*",
+      "destination": "https://stally-pg2v063ft-phan-tam-s-projects.vercel.app/assets/:file*"
+    }
+  ]
+}
