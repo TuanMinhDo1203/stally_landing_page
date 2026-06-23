@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Populate mock data into results
           extractionResult.style.display = 'block';
-          document.getElementById('mock-vendor-name').innerText = 'Công ty TNHH Thực phẩm Sạch HN';
+          document.getElementById('mock-vendor-name').innerText = 'Công ty TNHH Vật tư ABC';
           document.getElementById('mock-total-price').innerText = '145.800.000 ₫';
           document.getElementById('mock-delivery-time').innerText = '1-2 ngày làm việc';
         }, 1500);
@@ -151,11 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const name = document.getElementById('register-name').value;
       const phone = document.getElementById('register-phone').value;
-      const restaurant = document.getElementById('register-restaurant').value;
+      const business = document.getElementById('register-business').value;
       
       // Store in LocalStorage (mock saving to DB)
       const registrations = JSON.parse(localStorage.getItem('stally_registrations') || '[]');
-      registrations.push({ name, phone, restaurant, date: new Date().toISOString() });
+      registrations.push({ name, phone, business, date: new Date().toISOString() });
       localStorage.setItem('stally_registrations', JSON.stringify(registrations));
       
       // Reset form
